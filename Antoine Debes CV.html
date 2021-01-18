@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #container-1{
+            top:0;
+            width:100%;
+            height:150px;
+            background-color:lightslategrey;
+            display:flex;
+        }
+        #picture{
+            height:110px;
+            width:110px;
+            position:absolute;
+            background-color:slategrey;
+            margin-top:20px;
+            left:50%;
+            transform:translate(-50%);
+        }
+        #picture p {
+            text-align:center;
+            margin-top:40%;
+        }
+        #info{
+            height:120px;
+            width:40%;
+            background-color:white;
+            right:0;
+            position:absolute;
+            margin-top:15px;
+            display:flex;
+        }
+        #info #box-1{
+            flex-grow:1;
+            background-color:red;    
+        }
+        #info #box-1 p{
+            height:20px;
+            margin-top:3px;
+            color:white;
+        }
+        #info #box-2{
+            flex-grow:2;
+            background-color:black;
+        }
+        #info #box-2 p {
+            height:20px;
+            margin-top:3px;
+            color:red;
+        }
+        #nick-name{
+            position:absolute;
+            left:10%;
+            margin-top:20px;
+            width:400px;
+            height:120px
+            
+        }
+        #name{
+            font-size:40px;
+            text-align: center;
+            color:red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height:20px;
+        }
+        #doing{
+            font-size:30px;
+            text-align:center;
+            color:red;
+            height:20px;
+            margin-top:40px;
+        }
+        #container-2{
+            display:flex;
+            flex-wrap: wrap;
+            margin:50px 30px 0 90px;
+            height:77vh;
+           flex-direction:row;
+           align-content: flex-start;
+        }
+        #item{
+            width:49%;
+            height:30vh;
+            
+        }
+        #item ul {
+            list-style-position: inside;
+            
+        }
+        #item ul li{
+            font-size:30px;
+
+            
+        }
+        #item ul li::marker{
+            font-size:1.5em;
+            color:red;
+            
+        }
+        #item-2{
+            height:10px;
+            width:50%;
+        }
+        #item-2 ul li{
+            font-size:30px;
+        }
+        #item-2 ul li::marker{
+            font-size:1.5em;
+            color:red;
+        }
+        #item-2 ul {
+            list-style:inside;
+        }
+        #main-comp{
+            height:30%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+        #main-comp #box-1{
+            background-color:slategrey;
+            width:100%;
+            height:10%;
+            color:white;
+            margin-top:3px;
+            padding:3px;
+        }
+        #main-comp #box-1 #box-1-1{
+            width:80%;
+            background-color:red;
+        }
+        #main-comp #box-2{
+            background-color:slategrey;
+            width:100%;
+            height:10%;
+            color:white;
+            margin-top:3px;
+            padding:3px;
+        }
+        #main-comp #box-2 #box-2-1{
+            width:50%;
+            background-color:red;
+            
+        }
+        #main-comp #box-3{
+            background-color:slategrey;
+            width:100%;
+            height:10%;
+            color:white;
+            margin-top:3px;
+            padding:3px;
+        }
+        #main-comp #box-3 #box-3-1{
+            width:5%;
+            background-color:red;
+        }
+        #red{
+            color:red;
+        }
+        #color{
+            color:slategrey;
+        }
+        #item-2 #weak{
+            font-size:10px;
+        }
+       
+
+
+    </style>
+    <body>
+    
+        <main>
+        <div id="container-1">
+            <div id="picture">
+                <p>110X110</p>
+            </div>
+            <div id="info">
+                <div id="box-1">
+                    <p>Email</p>
+                    <p>Skype</p>
+                    <p>Phone Number</p>
+                    <p>Github</p>
+                    <p>Facebook</p>
+                </div>
+                <div id="box-2">
+                    <p>Antoinedebes@gmail.com</p>
+                    <p></p>
+                    <p>+961-71876126</p>
+                    <p>Debes</p>
+                    <p>Antoine Debes</p>
+                </div>
+            </div>
+            <div id="nick-name">
+                <p id="name">Antoine Debes</p>
+                <p id="doing">Accountant</p>
+            </div>
+        </div>
+
+    </main>
+        <div id="container-2">
+            <div id="item">
+            <ul>
+                <li>About</li><hr>
+                <p>itecoin price today is $153.18 USD with a 24-hour trading volume of $6,098,348,713 USD. Litecoin is up 7.84% in the last 24 hours. The current CoinMarketCap ranking is #7, with a market cap of $10,156,379,620 USD. It has a circulating supply of 66,305,591 LTC coins and a max. supply of 84,000,000 LTC coins.
+
+                    The top exchanges for trading in Litecoin are currently Binance, ZG.com, Huobi Global, BiKi, and OKEx. You can find others listed on our crypto exchanges page.</p>
+            </ul>
+        </div>
+        <div id="item">
+            <ul>
+                <li>Competencies</li><hr>
+                <p>Main</p>
+                <div id="main-comp">
+                    <div id="box-1">
+                        <div id="box-1-1">HTML</div>
+                    </div>
+                    <div id="box-2">
+                        <div id="box-2-1">CSS</div>
+                    </div>
+                    <div id="box-3">
+                        <div id="box-3-1">Javascript</div>
+                    </div>
+                </div>
+                <p>Others</p>
+                <div id="main-comp">
+                    <div id="box-1">
+                        <div id="box-1-1">HTML</div>
+                    </div>
+                    <div id="box-2">
+                        <div id="box-2-1">CSS</div>
+                    </div>
+                    <div id="box-3">
+                        <div id="box-3-1">Javascript</div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div id="item">
+            <ul>
+                <li>Experiences</li><hr>
+                <p id="red"><strong>Accounting and Audit</strong> @ Lara Baaklini</p>
+                <p id="color">  2 years exp in Lebanon</p>
+                <p>ABC</p>
+            </ul>
+        </div>
+        <div id="item">
+            <ul>
+                <li>Education</li><hr>
+                <p id="red"><strong>Accounting and Audit</strong>@AKU Uni</p>
+                <p id="color">  2017 in Lebanon</p>
+                <p>ABC</p><br>
+                <p id="red"><strong>Web Stack Training</strong>@self toughter</p>
+                <p id="color">2021 in lebanon</p>
+                <p>ABC</p>
+
+            </ul>
+        </div>
+        <div id="item-2">
+            <ul>
+                <li>Hobbies</li><hr>
+            </ul>
+            <ul>
+                <li >PC Games</li>
+                <li >Nature</li>
+                <li >Football</li>
+            </ul>
+        </div>
+        </div>
+    </body>
+</html>
